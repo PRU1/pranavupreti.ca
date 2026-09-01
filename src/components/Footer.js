@@ -1,26 +1,12 @@
-import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <Container>
-        <Row className="align-items-center justify-content-center">
-          <Col size={12} sm={6} className="text-center ">
-            {/*<div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
-            </div>
-            */}
-            <p>437 326 1907 | pranav.upreti@mail.utoronto.ca</p>
-          </Col>
-        </Row>
-      </Container>
+    <footer className="footer" id="contact">
+      <p className="section-kicker">Contact</p>
+      <h2 className="section-title section-title-sm">Let's talk</h2>
+      <p className="contact-line">
+        437 326 1907 &nbsp;|&nbsp; <a href="mailto:pranav.upreti@mail.utoronto.ca">pranav.upreti@mail.utoronto.ca</a>
+      </p>
+      <p className="copyright">&copy; {new Date().getFullYear()} Pranav Upreti</p>
     </footer>
   )
 }

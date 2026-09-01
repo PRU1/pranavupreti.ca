@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style id="__base">
+    @font-face { font-family: "et-book"; src: url("assets/fonts/et-book-roman.woff") format("woff"); font-weight: normal; font-style: normal; font-display: swap; }
+    @font-face { font-family: "et-book"; src: url("assets/fonts/et-book-italic.woff") format("woff"); font-weight: normal; font-style: italic; font-display: swap; }
+    @font-face { font-family: "et-book"; src: url("assets/fonts/et-book-bold.woff") format("woff"); font-weight: bold; font-style: normal; font-display: swap; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body { margin: 0; }
+    a { color: #13a888; }
+    a:hover { color: #236acd; }
+    @keyframes updown { 0% { transform: translateY(-6px); } 50% { transform: translateY(6px); } 100% { transform: translateY(-6px); } }
+  </style>
+  <script src="./image-slot.js"></script>
+</helmet>
+
+<div style="font-family:'et-book',Palatino,'Palatino Linotype',Georgia,serif;background:#fff2e7;color:#403d3d;min-height:100vh;">
+
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:50;background:#fff2e7;border-bottom:1px solid rgba(64,61,61,0.15);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:16px 6%;">
+    <a href="#home" style="font-weight:bold;font-size:19px;letter-spacing:0.3px;text-decoration:none;color:#403d3d;">Pranav Upreti</a>
+    <div style="display:flex;gap:26px;flex-wrap:wrap;">
+      <a href="#about" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">About</a>
+      <a href="#gallery" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">Gallery</a>
+      <a href="#projects" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">Projects</a>
+      <a href="#experience" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">Experience</a>
+      <a href="#skills" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">Skills</a>
+      <a href="#publications" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">Research</a>
+      <a href="#contact" style="font-size:16px;text-decoration:none;color:#403d3d;opacity:0.75;">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" style="min-height:82vh;display:flex;align-items:center;justify-content:center;padding:40px 6%;text-align:center;">
+    <div style="max-width:760px;">
+      <div style="display:flex;align-items:stretch;justify-content:center;gap:32px;text-align:left;">
+        <div>
+          <h1 style="font-size:50px;font-weight:700;letter-spacing:0.5px;line-height:1.1;margin:0 0 18px 0;color:#13a888;">Hi! I'm Pranav,</h1>
+          <p style="font-size:19px;line-height:1.5;margin:0 0 22px 0;"><b>EngSci @ UofT</b> &nbsp;|&nbsp; Interested in quantum computing and ML.</p>
+          <div style="display:flex;gap:10px;">
+            <a href="https://github.com/PRU1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" style="width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#13a888;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/pranav-upreti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" style="width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#13a888;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5 5 0 0 1 16 8z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="assets/industry.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume" title="Resume" style="width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#13a888;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg>
+            </a>
+          </div>
+        </div>
+        <image-slot id="headshot" shape="rounded" radius="14" placeholder="Drop a headshot" style="width:180px;border:1px solid rgba(64,61,61,0.2);"></image-slot>
+      </div>
+      <a href="#about" aria-label="Scroll to about" style="display:inline-block;margin-top:34px;color:#403d3d;opacity:0.6;text-decoration:none;">
+        <svg style="animation:updown 2.4s ease-in-out infinite;" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="padding:70px 6% 50px;">
+    <div style="max-width:760px;margin:0 auto;">
+      <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;">About</p>
+      <h2 style="font-size:32px;font-weight:700;margin:0 0 22px 0;">A bit more about me</h2>
+      <p style="font-size:18px;line-height:1.65;margin:0 0 18px 0;">I'm an engineering student who wants to design the next generation of quantum computers. Recently, I audited CSC2332 (Introduction to Quantum Algorithms) and am working on a variational quantum algorithm for spectral analysis. I am also doing embedded programming for UTBIOME's droplet generator team.</p>
+      <p style="font-size:18px;line-height:1.65;margin:0 0 18px 0;">I have also studied process modelling and simulation in the context of chemical engineering, focussing on CSTRs. Further, I have experience with ML and full-stack web applications (see <a href="https://github.com/PRU1" style="text-decoration:none;">my GitHub</a>).</p>
+      <p style="font-size:18px;line-height:1.65;margin:0;">Outside engineering and academics, I am an avid hiker and aspiring dragon boater. Feel free to <a href="mailto:pranav.upreti@mail.utoronto.ca" style="text-decoration:none;">reach out!</a></p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" style="padding:40px 6% 70px;">
+    <div style="max-width:760px;margin:0 auto;">
+      <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;text-align:center;">Gallery</p>
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 26px 0;text-align:center;">Off the clock</h2>
+      <div style="position:relative;border-radius:14px;overflow:hidden;">
+        <img src="{{ currentImage.src }}" alt="{{ currentImage.alt }}" style="width:100%;height:420px;object-fit:cover;display:block;"/>
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(180deg,rgba(64,61,61,0) 0%,rgba(64,61,61,0.55) 100%);padding:34px 20px 16px;">
+          <p style="color:#fff;font-size:15px;margin:0;">{{ currentImage.caption }}</p>
+        </div>
+        <button onClick="{{ prevImage }}" aria-label="Previous photo" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.85);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#403d3d;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button onClick="{{ nextImage }}" aria-label="Next photo" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.85);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#403d3d;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+      <div style="display:flex;justify-content:center;gap:8px;margin-top:14px;">
+        <sc-for list="{{ galleryImages }}" as="img" hint-placeholder-count="5">
+          <span onClick="{{ img.select }}" style="width:8px;height:8px;border-radius:50%;background:{{ img.dotColor }};cursor:pointer;display:inline-block;"></span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" style="padding:60px 6% 70px;border-top:1px solid rgba(64,61,61,0.15);">
+    <div style="max-width:1000px;margin:0 auto;">
+      <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;text-align:center;">Projects</p>
+      <h2 style="font-size:32px;font-weight:700;margin:0 0 40px 0;text-align:center;">Things I've built</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
+        <div style="border:1px solid rgba(64,61,61,0.2);border-radius:10px;padding:26px;">
+          <h4 style="font-size:20px;font-weight:700;margin:0 0 8px 0;">plot2spectra</h4>
+          <p style="font-size:16px;line-height:1.55;color:#403d3d;opacity:0.85;margin:0 0 16px 0;">Digitizes published figures back into numerical data — reimplements an optical-flow-inspired curve tracer and replaces hand-tuned axis/tick detection with Claude Vision.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">Python</span>
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">Computer Vision</span>
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">Claude API</span>
+          </div>
+          <a href="https://github.com/PRU1" target="_blank" rel="noopener noreferrer" style="font-size:15px;text-decoration:none;">View on GitHub &rarr;</a>
+        </div>
+        <div style="border:1px solid rgba(64,61,61,0.2);border-radius:10px;padding:26px;">
+          <h4 style="font-size:20px;font-weight:700;margin:0 0 8px 0;">Virtual Aircraft Controller</h4>
+          <p style="font-size:16px;line-height:1.55;color:#403d3d;opacity:0.85;margin:0 0 16px 0;">A real-time virtual aircraft controller with speech input — extracts heading, altitude, and runway assignment from voice via an audio-to-text pipeline.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">FastAPI</span>
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">Streamlit</span>
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">higgs-audio API</span>
+          </div>
+          <a href="https://github.com/PRU1" target="_blank" rel="noopener noreferrer" style="font-size:15px;text-decoration:none;">View on GitHub &rarr;</a>
+        </div>
+        <div style="border:1px solid rgba(64,61,61,0.2);border-radius:10px;padding:26px;">
+          <h4 style="font-size:20px;font-weight:700;margin:0 0 8px 0;">SlideHive</h4>
+          <p style="font-size:16px;line-height:1.55;color:#403d3d;opacity:0.85;margin:0 0 16px 0;">A beehive redesigned for the Toronto Beekeeping Collective — cuts lifting strain by over 50%, matches Langstroth-hive insulation, and adds a drawer mechanism that resists propolis buildup.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">CAD</span>
+            <span style="font-size:12px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:4px 10px;">SimScale Thermal Analysis</span>
+          </div>
+          <a href="https://github.com/PRU1" target="_blank" rel="noopener noreferrer" style="font-size:15px;text-decoration:none;">View on GitHub &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" style="padding:60px 6% 70px;border-top:1px solid rgba(64,61,61,0.15);">
+    <div style="max-width:700px;margin:0 auto;">
+      <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;">Experience</p>
+      <h2 style="font-size:32px;font-weight:700;margin:0 0 36px 0;">Where I've spent my time</h2>
+      <div style="display:flex;flex-direction:column;gap:30px;border-left:2px solid rgba(19,168,136,0.35);padding-left:26px;">
+        <div style="position:relative;">
+          <span style="position:absolute;left:-32px;top:4px;width:10px;height:10px;border-radius:50%;background:#13a888;"></span>
+          <p style="font-size:13px;color:#13a888;letter-spacing:0.4px;margin:0 0 4px 0;">Feb 2026 — Present</p>
+          <h4 style="font-size:19px;font-weight:700;margin:0 0 4px 0;">Undergraduate Researcher, Joyce Poon Group</h4>
+          <p style="font-size:16px;line-height:1.55;opacity:0.85;margin:0;">Built a benchmarking suite for PhIDO, an agentic photonic integrated circuit design tool, and implemented deterministic GDSFactory+ routing into its layout agent.</p>
+        </div>
+        <div style="position:relative;">
+          <span style="position:absolute;left:-32px;top:4px;width:10px;height:10px;border-radius:50%;background:#13a888;"></span>
+          <p style="font-size:13px;color:#13a888;letter-spacing:0.4px;margin:0 0 4px 0;">May 2026 — Aug 2026</p>
+          <h4 style="font-size:19px;font-weight:700;margin:0 0 4px 0;">Research Volunteer, Mount Sinai Hospital</h4>
+          <p style="font-size:16px;line-height:1.55;opacity:0.85;margin:0;">Ballistocardiography signal analysis with Dr. Isaac Sung Jae Chang — estimated cardiac stroke volume from 3-axis BCG signals and validated heart-rate extraction on healthy and heart-failure cohorts.</p>
+        </div>
+        <div style="position:relative;">
+          <span style="position:absolute;left:-32px;top:4px;width:10px;height:10px;border-radius:50%;background:#13a888;"></span>
+          <p style="font-size:13px;color:#13a888;letter-spacing:0.4px;margin:0 0 4px 0;">Nov 2025 — Present</p>
+          <h4 style="font-size:19px;font-weight:700;margin:0 0 4px 0;">Embedded Programmer, UTBIOME</h4>
+          <p style="font-size:16px;line-height:1.55;opacity:0.85;margin:0;">C++ firmware and centrifuge-motor control logic for an on-demand droplet generator used in medical research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="padding:60px 6% 70px;border-top:1px solid rgba(64,61,61,0.15);">
+    <div style="max-width:760px;margin:0 auto;">
+      <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;">Skills &amp; Coursework</p>
+      <h2 style="font-size:32px;font-weight:700;margin:0 0 32px 0;">What I work with</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;">
+        <div>
+          <h5 style="font-size:16px;font-weight:700;margin:0 0 12px 0;color:#403d3d;">Languages</h5>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Python</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">C / C++</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">MATLAB</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Java</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">SystemVerilog</span>
+          </div>
+        </div>
+        <div>
+          <h5 style="font-size:16px;font-weight:700;margin:0 0 12px 0;color:#403d3d;">ML &amp; Quantum</h5>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">NumPy / SciPy</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Keras / TensorFlow</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Pennylane</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Qiskit</span>
+          </div>
+        </div>
+        <div>
+          <h5 style="font-size:16px;font-weight:700;margin:0 0 12px 0;color:#403d3d;">Hardware &amp; Photonics</h5>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">RISC-V</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">gdsfactory / KLayout</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Tidy3D</span>
+          </div>
+        </div>
+        <div>
+          <h5 style="font-size:16px;font-weight:700;margin:0 0 12px 0;color:#403d3d;">Tools &amp; Web</h5>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">FastAPI / Streamlit</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">Git</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">uv / pytest</span>
+            <span style="font-size:13px;border:1px solid rgba(64,61,61,0.25);border-radius:20px;padding:5px 12px;">HTML / CSS / JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" style="padding:60px 6% 70px;border-top:1px solid rgba(64,61,61,0.15);">
+    <div style="max-width:700px;margin:0 auto;">
+      <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;">Research</p>
+      <h2 style="font-size:32px;font-weight:700;margin:0 0 26px 0;">Publications &amp; writing</h2>
+      <div style="border-top:1px solid rgba(64,61,61,0.15);padding-top:20px;">
+        <h4 style="font-size:19px;font-weight:700;margin:0 0 4px 0;">Benchmarking Suite for PhIDO</h4>
+        <p style="font-size:15px;color:#13a888;margin:0 0 8px 0;">Joyce Poon Group, University of Toronto &middot; ongoing</p>
+        <p style="font-size:16px;line-height:1.55;opacity:0.85;margin:0;">Testing an agentic photonic integrated circuit design tool's ability to reproduce novel PICs from papers and foundry data sheets — with toggleable PDK/knowledge-base retrieval, physics checkers, and formal verification.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" style="padding:60px 6% 50px;border-top:1px solid rgba(64,61,61,0.15);text-align:center;">
+    <p style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#13a888;margin:0 0 8px 0;">Contact</p>
+    <h2 style="font-size:28px;font-weight:700;margin:0 0 18px 0;">Let's talk</h2>
+    <p style="font-size:16px;line-height:1.5;margin:0 0 6px 0;">437 326 1907 &nbsp;|&nbsp; <a href="mailto:pranav.upreti@mail.utoronto.ca" style="text-decoration:none;">pranav.upreti@mail.utoronto.ca</a></p>
+    <p style="font-size:13px;opacity:0.55;margin-top:26px;">&copy; {{ year }} Pranav Upreti</p>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    galleryIndex: 0,
+    galleryImages: [
+      { src: 'assets/img/p1.png', alt: 'Jokers Hill trail', caption: 'Jokers Hill trail' },
+      { src: 'assets/img/famousMilo.jpeg', alt: 'Twinning with my dog Milo', caption: 'Twinning with my dog Milo' },
+      { src: 'assets/img/m4.png', alt: 'Humber trail', caption: 'Humber trail' },
+      { src: 'assets/img/m6.png', alt: 'Winter lights', caption: 'Winter lights' },
+      { src: 'assets/img/m7.png', alt: 'Snow day', caption: 'Snow day' }
+    ]
+  };
+
+  renderVals() {
+    const { galleryImages, galleryIndex } = this.state;
+    const n = galleryImages.length;
+    return {
+      galleryImages: galleryImages.map((img, i) => ({
+        ...img,
+        dotColor: i === galleryIndex ? '#13a888' : 'rgba(64,61,61,0.25)',
+        select: () => this.setState({ galleryIndex: i })
+      })),
+      currentImage: galleryImages[galleryIndex],
+      nextImage: () => this.setState(s => ({ galleryIndex: (s.galleryIndex + 1) % n })),
+      prevImage: () => this.setState(s => ({ galleryIndex: (s.galleryIndex - 1 + n) % n })),
+      year: new Date().getFullYear()
+    };
+  }
+}
+
+</script>
+</body>
+</html>

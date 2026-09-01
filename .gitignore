@@ -24,3 +24,6 @@ yarn-error.log*
 
 # environment variables
 .env
+
+# design planning
+/design_handoff_portfolio_redesign
