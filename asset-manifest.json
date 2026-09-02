@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a01fa211.css",
-    "main.js": "/static/js/main.ef23ef08.js",
+    "main.css": "/static/css/main.f2b59552.css",
+    "main.js": "/static/js/main.6bb46590.js",
     "static/js/453.16b309a6.chunk.js": "/static/js/453.16b309a6.chunk.js",
     "static/media/m6.png": "/static/media/m6.668c7485cc5a0e4a9301.png",
     "static/media/cover_photo.png": "/static/media/cover_photo.37ff24563d3346f38966.png",
@@ -30,12 +30,12 @@
     "static/media/et-book-roman-old-style-figures.eot": "/static/media/et-book-roman-old-style-figures.44171ebd10a032726f36.eot",
     "static/media/et-book-display-italic-old-style-figures.eot": "/static/media/et-book-display-italic-old-style-figures.4abce91518b8e452e9f8.eot",
     "index.html": "/index.html",
-    "main.a01fa211.css.map": "/static/css/main.a01fa211.css.map",
-    "main.ef23ef08.js.map": "/static/js/main.ef23ef08.js.map",
+    "main.f2b59552.css.map": "/static/css/main.f2b59552.css.map",
+    "main.6bb46590.js.map": "/static/js/main.6bb46590.js.map",
     "453.16b309a6.chunk.js.map": "/static/js/453.16b309a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a01fa211.css",
-    "static/js/main.ef23ef08.js"
+    "static/css/main.f2b59552.css",
+    "static/js/main.6bb46590.js"
   ]
 }
